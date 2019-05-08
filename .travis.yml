@@ -1,4 +1,13 @@
 language: node_js
 node_js:
-  - '6'
-  - '4'
+  - '8'
+deploy:
+  provider: npm
+  email: muyuxingguang@qq.com
+  api_key:
+    secure: FUc/yciMqcFjH5aHTxpv2ztajR2/jAkO3kFxa0oNdiXV22Lkz7MCkkB0sFPUpG+ex5ugAUqQqKOyjkM+N9cuAi8IYiqt4A7IdrF9grO3IUgSxy433tZOV4yjUeiSNnYdE605U6BobF7PS9m54Iq5S/lwsxhaGYr9cHm1gDDpjZcbj917kJsxrtUqzazEwd4S6jhf+dzzey8sVJ4xwEvsWL3VNUtOVqvUXUv1lmOL1r0BYD0jYUoipQY+9ycKa8oUTbmemUE7BiiMrLHcn9L6IZ8lui8GJslDwK3NA/66LiB/8d//yYPudggJhDSXZwYR3Nhhclh9PHcVVXaWuwGJdQwzaZYrNE/On4IGlv+i7NI7xacn3hHfHgFHB9UN+/gdqtjxp6ONabx0IFPBhMZ8ipXbHp9CPVXC8IgU6ZAzNnyBx73QuJ4w2InytS06tHXjfTRPzoovP2Vg8WZcqmNMRypRK5pP3QPJtDOAwW9VKaaXqzN9TeXCOcnTw7yjri6gwX86mWz/qitP4K6IkYZ1vv6TH91J6VFbglRjn6Z1Mgd01hjw8nnXBsV6pj+kWhrrPTxCRNjxvy+IJQ8LYR6GjG3uBk0FId+FMaZudomXhSDyX5dI1dos7B5fm5f2KPwnCF7HS5TWCzj2H7C1mPi2De0RVIYcazHhXrMZmbZrWz0=
+  skip_cleanup: true
+  on:
+    tags: true
+    branch: master
+  tag: latest
