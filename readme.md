@@ -2,21 +2,22 @@
 
 > front end tools mine
 
-
 ## Install
 
 ```
 $ npm install --global alfred-femine
 ```
 
-*Requires [Node.js](https://nodejs.org) 4+ and the Alfred [Powerpack](https://www.alfredapp.com/powerpack/).*
-
+_Requires [Node.js](https://nodejs.org) 8+ and the Alfred [Powerpack](https://www.alfredapp.com/powerpack/)._
 
 ## Usage
 
 In Alfred, type `fm`, <kbd>Enter</kbd>, and your query.
 
+## Related
+
+[alfy](https://github.com/sindresorhus/alfy)
 
 ## License
 
-MIT © [zhangxing.miner](https://zxing.top)
+MIT © [zxing](https://zxing.top)

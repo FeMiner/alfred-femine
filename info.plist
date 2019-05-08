@@ -12,7 +12,7 @@
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>C00B8715-CEFA-4591-BC1C-40105B80571E</string>
+				<string>3A4A9880-CAA5-409C-A48A-3AD9C42F245D</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -46,7 +46,7 @@
 				<key>escaping</key>
 				<integer>102</integer>
 				<key>keyword</key>
-				<string>fm</string>
+				<string>r2h</string>
 				<key>queuedelaycustom</key>
 				<integer>3</integer>
 				<key>queuedelayimmediatelyinitially</key>
@@ -58,7 +58,7 @@
 				<key>runningsubtext</key>
 				<string>Searching...</string>
 				<key>script</key>
-				<string>./node_modules/.bin/run-node index.js "$1"</string>
+				<string>./node_modules/.bin/run-node tools/r2h.js "$1"</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
@@ -82,21 +82,19 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>browser</key>
-				<string></string>
-				<key>spaces</key>
-				<string></string>
-				<key>url</key>
-				<string>{query}</string>
-				<key>utf8</key>
+				<key>autopaste</key>
 				<true/>
+				<key>clipboardtext</key>
+				<string>{query}</string>
+				<key>transient</key>
+				<false/>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.action.openurl</string>
+			<string>alfred.workflow.output.clipboard</string>
 			<key>uid</key>
-			<string>C00B8715-CEFA-4591-BC1C-40105B80571E</string>
+			<string>3A4A9880-CAA5-409C-A48A-3AD9C42F245D</string>
 			<key>version</key>
-			<integer>1</integer>
+			<integer>2</integer>
 		</dict>
 	</array>
 	<key>readme</key>
@@ -106,16 +104,16 @@
 		<key>0D1710C9-4AB7-4C73-A9BD-E45CB8C9C780</key>
 		<dict>
 			<key>xpos</key>
-			<integer>10</integer>
+			<integer>110</integer>
 			<key>ypos</key>
-			<integer>10</integer>
+			<integer>20</integer>
 		</dict>
-		<key>C00B8715-CEFA-4591-BC1C-40105B80571E</key>
+		<key>3A4A9880-CAA5-409C-A48A-3AD9C42F245D</key>
 		<dict>
 			<key>xpos</key>
-			<integer>150</integer>
+			<integer>350</integer>
 			<key>ypos</key>
-			<integer>10</integer>
+			<integer>20</integer>
 		</dict>
 	</dict>
 	<key>webaddress</key>
