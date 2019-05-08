@@ -2,13 +2,13 @@ import test from 'ava'
 import alfyTest from 'alfy-test'
 
 test('foo', async t => {
-	const alfy = alfyTest()
-	const result = await alfy('Rainbow')
+  const alfy = alfyTest()
+  const result = await alfy('Rainbow')
 
-	t.deepEqual(result, [
-		{
-			title: 'waitting....',
-			subtitle: 'Rainbow'
-		}
-	])
+  t.deepEqual(result, [
+    {
+      title: 'waitting....',
+      subtitle: 'Rainbow'
+    }
+  ])
 })

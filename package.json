@@ -40,7 +40,8 @@
   ],
   "dependencies": {
     "alfy": "*",
-    "hex-rgb": "^4.1.0"
+    "hex-rgb": "^4.1.0",
+    "rgb-hex": "^3.0.0"
   },
   "devDependencies": {
     "alfy-test": "*",
@@ -50,6 +51,6 @@
     "xo": "*"
   },
   "xo": {
-    "semicolon": false
+    "prettier": true
   }
 }

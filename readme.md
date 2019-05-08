@@ -1,5 +1,4 @@
-# alfred-femine [![Build Status](https://travis-ci.org/FeMiner/alfred-femine.svg?branch=master)](https://travis-ci.org/FeMiner/alfred-femine)[![XO code style](https://img.shields.io/badge/code_style-XO-5ed9c7.svg)](https://github.com/xojs/xo)
-[![npm-verison](https://img.shields.io/npm/v/alfred-femine.svg?style=flat-square)](https://www.npmjs.com/package/alfred-femine)
+# alfred-femine [![Build Status](https://travis-ci.org/FeMiner/alfred-femine.svg?branch=master)](https://travis-ci.org/FeMiner/alfred-femine)[![XO code style](https://img.shields.io/badge/code_style-XO-5ed9c7.svg)](https://github.com/xojs/xo)[![npm-verison](https://img.shields.io/npm/v/alfred-femine.svg?style=flat-square)](https://www.npmjs.com/package/alfred-femine)
 
 > front end tools mine
 
@@ -13,14 +12,24 @@ _Requires [Node.js](https://nodejs.org) 8+ and the Alfred [Powerpack](https://ww
 
 ## Usage
 
-In Alfred, type `fm`, <kbd>Enter</kbd>, and your query.
+In Alfred, type `key`, <kbd>Enter</kbd>, and your query.
+
+- rgbhex - rgba 颜色转 16 进制颜色
+
+  ```js
+  rgbhex 255,234,122
+  rgbhex 255,234,122,0.5
+  ```
+
+- hexrgb - 16 进制颜色转 rgba 颜色
+
+  ```js
+  hexrgb #fff
+  ```
 
 ## Related
 
 [alfy](https://github.com/sindresorhus/alfy)
-
-## TODO
-code style -> prettier
 
 ## License
 
