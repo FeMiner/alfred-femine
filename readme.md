@@ -20,4 +20,4 @@ In Alfred, type `fm`, <kbd>Enter</kbd>, and your query.
 
 ## License
 
-MIT © [zxing](https://zxing.top)
+MIT © [zxing](https://www.zxing.top)
