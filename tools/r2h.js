@@ -1,5 +1,5 @@
 /**
- * rgb颜色转16进制颜色
+ * RGB颜色转16进制颜色
  */
 const alfy = require('alfy')
 
