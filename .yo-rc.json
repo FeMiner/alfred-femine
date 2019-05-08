@@ -1,8 +1,8 @@
 {
-  "generator-alfred": {
-    "promptValues": {
-      "githubUsername": "FeMiner",
-      "website": "https://zxing.top"
-    }
-  }
+	"generator-alfred": {
+		"promptValues": {
+			"githubUsername": "FeMiner",
+			"website": "https://www.zxing.top"
+		}
+	}
 }

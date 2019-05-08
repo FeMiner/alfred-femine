@@ -1,8 +1,8 @@
 /**
  * rgb颜色转16进制颜色
  */
-
 const alfy = require('alfy')
+
 const rgb = alfy.input
 	.split(',')
 	.filter(Boolean)

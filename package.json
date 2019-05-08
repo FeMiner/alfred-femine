@@ -34,5 +34,8 @@
     "alfy-test": "^0.3.0",
     "ava": "^0.18.0",
     "xo": "^0.17.0"
+  },
+  "xo": {
+    "semicolon": false
   }
 }
