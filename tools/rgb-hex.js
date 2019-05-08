@@ -12,9 +12,10 @@ const rgba = alfy.input
 let hex = ''
 try {
   hex = '#' + rgbHex(...rgba)
-} catch (e) {
-  alfy.log(e)
+} catch (error) {
+  alfy.log(error)
 }
+
 if (hex) {
   alfy.output([
     {
