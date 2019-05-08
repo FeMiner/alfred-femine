@@ -21,6 +21,19 @@
 				<false/>
 			</dict>
 		</array>
+		<key>5F42D4F2-1826-4F59-8A2A-CE8775BDB0F0</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>DC31A946-EE95-4624-8566-0A11E52D9A7A</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 	</dict>
 	<key>createdby</key>
 	<string></string>
@@ -66,7 +79,7 @@
 				<key>subtext</key>
 				<string></string>
 				<key>title</key>
-				<string>FeMine</string>
+				<string>RGBA to Hex</string>
 				<key>type</key>
 				<integer>0</integer>
 				<key>withspace</key>
@@ -83,7 +96,7 @@
 			<key>config</key>
 			<dict>
 				<key>autopaste</key>
-				<true/>
+				<false/>
 				<key>clipboardtext</key>
 				<string>{query}</string>
 				<key>transient</key>
@@ -93,6 +106,70 @@
 			<string>alfred.workflow.output.clipboard</string>
 			<key>uid</key>
 			<string>3A4A9880-CAA5-409C-A48A-3AD9C42F245D</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alfredfiltersresults</key>
+				<false/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>keyword</key>
+				<string>h2r</string>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string></string>
+				<key>script</key>
+				<string>./node_modules/.bin/run-node tools/h2r.js "$1"</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>subtext</key>
+				<string></string>
+				<key>title</key>
+				<string>Hex to RGB[A]</string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>5F42D4F2-1826-4F59-8A2A-CE8775BDB0F0</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>autopaste</key>
+				<false/>
+				<key>clipboardtext</key>
+				<string>{query}</string>
+				<key>transient</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.clipboard</string>
+			<key>uid</key>
+			<string>DC31A946-EE95-4624-8566-0A11E52D9A7A</string>
 			<key>version</key>
 			<integer>2</integer>
 		</dict>
@@ -114,6 +191,20 @@
 			<integer>310</integer>
 			<key>ypos</key>
 			<integer>20</integer>
+		</dict>
+		<key>5F42D4F2-1826-4F59-8A2A-CE8775BDB0F0</key>
+		<dict>
+			<key>xpos</key>
+			<integer>110</integer>
+			<key>ypos</key>
+			<integer>170</integer>
+		</dict>
+		<key>DC31A946-EE95-4624-8566-0A11E52D9A7A</key>
+		<dict>
+			<key>xpos</key>
+			<integer>310</integer>
+			<key>ypos</key>
+			<integer>170</integer>
 		</dict>
 	</dict>
 	<key>webaddress</key>
