@@ -27,6 +27,8 @@ In Alfred, type `key`, <kbd>Enter</kbd>, and your query.
   hexrgb #fff
   ```
 
+- localip - 查询本机 ip 地址
+
 ## Related
 
 [alfy](https://github.com/sindresorhus/alfy)
