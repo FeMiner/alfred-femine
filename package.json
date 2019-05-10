@@ -16,7 +16,8 @@
     "test": "xo && ava",
     "fix": "xo --fix",
     "postinstall": "alfy-init",
-    "preuninstall": "alfy-cleanup"
+    "preuninstall": "alfy-cleanup",
+    "prepublish": "node release.js"
   },
   "husky": {
     "hooks": {
