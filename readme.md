@@ -36,7 +36,17 @@ In Alfred, type `key`, <kbd>Enter</kbd>, and your query.
   ```
 
 - enbase64 - base64 编码
+
+  ```js
+  enbase64 text
+
+  ```
+
 - debase64 - base64 解码
+
+  ```js
+  debase64 text
+  ```
 
 ## Related
 
