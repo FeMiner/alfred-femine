@@ -1,6 +1,6 @@
 {
   "name": "alfred-femine",
-  "version": "0.0.11",
+  "version": "0.0.9",
   "description": "front end tools mine",
   "license": "MIT",
   "repository": "FeMiner/alfred-femine",
@@ -21,7 +21,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "npm run fix && lint-staged  && npm run test && npm run prepublishOnly"
+      "pre-commit": "npm run test && npm run prepublishOnly && npm run fix && lint-staged"
     }
   },
   "lint-staged": {
