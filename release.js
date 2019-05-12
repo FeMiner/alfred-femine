@@ -26,8 +26,7 @@ function getVersion() {
 
 const packageInfo = JSON.parse(fs.readFileSync('package.json'))
 const version = getVersion()
-if (version) {
+if (version !== packageInfo.version) {
   packageInfo.version = version
+  fs.writeFileSync('package.json', JSON.stringify(packageInfo, null, 2) + '\r')
 }
-
-fs.writeFileSync('package.json', JSON.stringify(packageInfo, null, 2))
