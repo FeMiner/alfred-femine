@@ -1,3 +1,6 @@
+/**
+ * Base64解码
+ */
 const btoa = require('atob')
 const alfy = require('alfy')
 

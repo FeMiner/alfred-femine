@@ -1,3 +1,6 @@
+/**
+ * Base64编码
+ */
 const btoa = require('btoa')
 const alfy = require('alfy')
 

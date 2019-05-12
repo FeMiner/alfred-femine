@@ -29,6 +29,15 @@ In Alfred, type `key`, <kbd>Enter</kbd>, and your query.
 
 - localip - 查询本机 ip 地址
 
+- caniuse - caniuse 搜索
+
+  ```js
+  caniuse flex
+  ```
+
+- enbase64 - base64 编码
+- debase64 - base64 解码
+
 ## Related
 
 [alfy](https://github.com/sindresorhus/alfy)
