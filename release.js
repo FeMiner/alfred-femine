@@ -3,18 +3,19 @@ const { execSync } = require('child_process')
 
 function cmd(command) {
   try {
-    const result = execSync(command)
-    return result.toString()
+    const output = execSync(command)
+    return output.toString()
   } catch (error) {
-    throw error
+    return ''
   }
 }
 
 function getVersion() {
   try {
-    let tag = cmd('git describe --exact-match --tags $(git rev-parse HEAD)')
-    tag = tag.replace(/\r?\n|\r/g, '')
-    if (/^v\d+.\d+.\d+$/.test(tag)) {
+    const tag = cmd('git describe --tags')
+      .split('-')
+      .filter(Boolean)[0]
+    if (tag && /^v\d+.\d+.\d+$/.test(tag)) {
       return tag.slice(1)
     }
 
@@ -26,7 +27,7 @@ function getVersion() {
 
 const packageInfo = JSON.parse(fs.readFileSync('package.json'))
 const version = getVersion()
-if (version !== packageInfo.version) {
+if (version && version !== packageInfo.version) {
   packageInfo.version = version
   fs.writeFileSync('package.json', JSON.stringify(packageInfo, null, 2) + '\r')
 }
