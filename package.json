@@ -13,15 +13,13 @@
     "node": ">=8"
   },
   "scripts": {
-    "test": "xo && ava",
-    "fix": "xo --fix",
     "postinstall": "alfy-init",
     "preuninstall": "alfy-cleanup",
     "prepublishOnly": "node release.js"
   },
   "husky": {
     "hooks": {
-      "pre-commit": "npm run fix && lint-staged && npm run test && npm run prepublishOnly"
+      "pre-commit": "lint-staged && npm run prepublishOnly"
     }
   },
   "lint-staged": {
@@ -46,6 +44,8 @@
     "btoa": "^1.2.1",
     "hex-rgb": "^4.1.0",
     "node-fetch": "^2.6.0",
+    "pify": "^4.0.1",
+    "plist": "^3.0.1",
     "rgb-hex": "^3.0.0",
     "translation.js": "^0.7.8"
   },
@@ -53,10 +53,6 @@
     "alfy-test": "*",
     "ava": "*",
     "husky": "^2.2.0",
-    "lint-staged": "^8.1.6",
-    "xo": "*"
-  },
-  "xo": {
-    "prettier": true
+    "lint-staged": "^8.1.6"
   }
 }

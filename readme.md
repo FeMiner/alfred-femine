@@ -1,4 +1,4 @@
-# alfred-femine [![Build Status](https://travis-ci.org/FeMiner/alfred-femine.svg?branch=master)](https://travis-ci.org/FeMiner/alfred-femine)[![XO code style](https://img.shields.io/badge/code_style-XO-5ed9c7.svg)](https://github.com/xojs/xo)[![npm-verison](https://img.shields.io/npm/v/alfred-femine.svg?style=flat-square)](https://www.npmjs.com/package/alfred-femine)
+# alfred-femine [![Build Status](https://travis-ci.org/FeMiner/alfred-femine.svg?branch=master)](https://travis-ci.org/FeMiner/alfred-femine)[![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)[![npm-verison](https://img.shields.io/npm/v/alfred-femine.svg?style=flat-square)](https://www.npmjs.com/package/alfred-femine)
 
 > front end tools mine
 
@@ -55,6 +55,18 @@ In Alfred, type `key`, <kbd>Enter</kbd>, and your query.
 ```
 
 - time - 时间戳
+
+- mdn - mdn 文档查询
+
+```js
+  mdn text
+```
+
+- npm - npm package 查询
+
+```js
+  npm text
+```
 
 ## Contribute
 
