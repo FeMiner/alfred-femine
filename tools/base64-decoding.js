@@ -9,8 +9,8 @@ const bin = btoa(alfy.input)
 if (bin) {
   alfy.output([
     {
-      title: 'base64解码结果',
-      subtitle: bin,
+      title: bin,
+      subtitle: 'base64解码结果',
       arg: bin
     }
   ])

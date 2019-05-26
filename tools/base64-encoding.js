@@ -8,8 +8,8 @@ const b64 = btoa(alfy.input)
 if (b64) {
   alfy.output([
     {
-      title: 'base64编码结果',
-      subtitle: b64,
+      title: b64,
+      subtitle: 'base64编码结果',
       arg: b64
     }
   ])

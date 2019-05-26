@@ -7,8 +7,8 @@ test('foo', async t => {
 
   t.deepEqual(result, [
     {
-      title: '十六进制颜色',
-      subtitle: '#ffffff',
+      title: '#ffffff',
+      subtitle: '十六进制颜色',
       arg: '#ffffff'
     }
   ])

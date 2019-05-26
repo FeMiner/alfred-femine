@@ -20,8 +20,8 @@ if (ips.length > 0) {
   const address = ips.join('; ')
   alfy.output([
     {
-      title: '本机ip地址',
-      subtitle: address,
+      title: address,
+      subtitle: '本机ip地址',
       arg: address
     }
   ])

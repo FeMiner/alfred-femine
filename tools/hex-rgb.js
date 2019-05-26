@@ -19,8 +19,8 @@ if (rgba) {
   })`
   alfy.output([
     {
-      title: 'RGB[A]颜色值',
-      subtitle: rgbaStr,
+      title: rgbaStr,
+      subtitle: 'RGB[A]颜色值',
       arg: rgbaStr
     }
   ])

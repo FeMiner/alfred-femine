@@ -19,8 +19,8 @@ try {
 if (hex) {
   alfy.output([
     {
-      title: '十六进制颜色',
-      subtitle: hex,
+      title: hex,
+      subtitle: '十六进制颜色',
       arg: hex
     }
   ])

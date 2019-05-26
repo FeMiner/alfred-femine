@@ -48,7 +48,15 @@ In Alfred, type `key`, <kbd>Enter</kbd>, and your query.
   debase64 text
   ```
 
-## Related
+- ts - 翻译
+
+```js
+  ts text
+```
+
+- time - 时间戳
+
+## Contribute
 
 [alfy](https://github.com/sindresorhus/alfy)
 
