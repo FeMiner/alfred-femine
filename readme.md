@@ -1,4 +1,4 @@
-# alfred-femine [![Build Status](https://travis-ci.org/FeMiner/alfred-femine.svg?branch=master)](https://travis-ci.org/FeMiner/alfred-femine)[![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)[![npm-verison](https://img.shields.io/npm/v/alfred-femine.svg?style=flat-square)](https://www.npmjs.com/package/alfred-femine)
+# alfred-femine [![Build Status](https://travis-ci.org/FeMiner/alfred-femine.svg?branch=master)](https://travis-ci.org/FeMiner/alfred-femine)[![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)[![npm-verison](https://img.shields.io/npm/v/alfred-femine.svg?style=flat-square)](https://www.npmjs.com/package/alfred-femine)[![npm](https://img.shields.io/npm/dt/alfred-femine.svg?style=flat-square)](https://www.npmjs.com/package/qrcode)[![npm](https://img.shields.io/npm/l/alfred-femine.svg?style=flat-square)](https://github.com/FeMiner/alfred-femine/blob/master/license)
 
 > front end tools mine
 
@@ -67,6 +67,14 @@ In Alfred, type `key`, <kbd>Enter</kbd>, and your query.
 ```js
   npm text
 ```
+
+- qr - 生成二维码
+
+```js
+  qr text
+```
+
+or (select content ->option + command + Q) or (copy content -> option + command + R)
 
 ## Contribute
 
