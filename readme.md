@@ -27,7 +27,7 @@ In Alfred, type `key`, <kbd>Enter</kbd>, and your query.
   hexrgb #fff
   ```
 
-- localip - 查询本机 ip 地址
+- ip - 查询本机内网和外网 ip 地址
 
 - caniuse - caniuse 搜索
 
@@ -75,6 +75,10 @@ In Alfred, type `key`, <kbd>Enter</kbd>, and your query.
 ```
 
 or (select content ->option + command + Q) or (copy content -> option + command + R)
+
+## TODO
+
+vscode, curl
 
 ## Contribute
 
