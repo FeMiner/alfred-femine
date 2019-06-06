@@ -60,7 +60,33 @@
 				<false/>
 			</dict>
 		</array>
+		<key>31B83E31-F6DD-4CC6-92A1-72365E1EFE8F</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>CCB0E0F3-5A9A-482E-8296-BAB046D60BF3</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>3689F12F-ED0F-43BA-A3CB-551EC82D1C4F</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>CCB0E0F3-5A9A-482E-8296-BAB046D60BF3</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>413B07F1-9473-4AB0-8EDA-133341B33D88</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
@@ -138,6 +164,19 @@
 				<false/>
 			</dict>
 		</array>
+		<key>73D0CCB4-49C7-48EC-B839-F4C4D8A78A8A</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>CCB0E0F3-5A9A-482E-8296-BAB046D60BF3</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>762B01BB-9786-4059-A519-BEF2EC6505D6</key>
 		<array/>
 		<key>AE658597-259F-441A-A362-5E7B403042E2</key>
@@ -200,58 +239,11 @@
 				<key>argumenttrimmode</key>
 				<integer>0</integer>
 				<key>argumenttype</key>
-				<integer>0</integer>
-				<key>escaping</key>
-				<integer>102</integer>
-				<key>keyword</key>
-				<string>rgbhex</string>
-				<key>queuedelaycustom</key>
-				<integer>3</integer>
-				<key>queuedelayimmediatelyinitially</key>
-				<true/>
-				<key>queuedelaymode</key>
-				<integer>0</integer>
-				<key>queuemode</key>
 				<integer>2</integer>
-				<key>runningsubtext</key>
-				<string>Searching...</string>
-				<key>script</key>
-				<string>./node_modules/.bin/run-node tools/rgb-hex.js "$1"</string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
-				<string>index.js</string>
-				<key>subtext</key>
-				<string></string>
-				<key>title</key>
-				<string>RGBA to Hex</string>
-				<key>type</key>
-				<integer>0</integer>
-				<key>withspace</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.scriptfilter</string>
-			<key>uid</key>
-			<string>0D1710C9-4AB7-4C73-A9BD-E45CB8C9C780</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>alfredfiltersresults</key>
-				<false/>
-				<key>alfredfiltersresultsmatchmode</key>
-				<integer>0</integer>
-				<key>argumenttrimmode</key>
-				<integer>0</integer>
-				<key>argumenttype</key>
-				<integer>0</integer>
 				<key>escaping</key>
 				<integer>102</integer>
 				<key>keyword</key>
-				<string>hexrgb</string>
+				<string>time</string>
 				<key>queuedelaycustom</key>
 				<integer>3</integer>
 				<key>queuedelayimmediatelyinitially</key>
@@ -263,7 +255,7 @@
 				<key>runningsubtext</key>
 				<string></string>
 				<key>script</key>
-				<string>./node_modules/.bin/run-node tools/hex-rgb.js "$1"</string>
+				<string>./node_modules/.bin/run-node tools/time.js "$1"</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
@@ -271,16 +263,16 @@
 				<key>subtext</key>
 				<string></string>
 				<key>title</key>
-				<string>Hex to RGB[A]</string>
+				<string>Get current timestamp</string>
 				<key>type</key>
 				<integer>0</integer>
 				<key>withspace</key>
-				<true/>
+				<false/>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.input.scriptfilter</string>
 			<key>uid</key>
-			<string>5F42D4F2-1826-4F59-8A2A-CE8775BDB0F0</string>
+			<string>68B44B80-9E37-4C6F-A2B9-7FA53E1CA2BC</string>
 			<key>version</key>
 			<integer>2</integer>
 		</dict>
@@ -345,147 +337,6 @@
 				<key>escaping</key>
 				<integer>102</integer>
 				<key>keyword</key>
-				<string>enbase64</string>
-				<key>queuedelaycustom</key>
-				<integer>3</integer>
-				<key>queuedelayimmediatelyinitially</key>
-				<true/>
-				<key>queuedelaymode</key>
-				<integer>0</integer>
-				<key>queuemode</key>
-				<integer>1</integer>
-				<key>runningsubtext</key>
-				<string></string>
-				<key>script</key>
-				<string>./node_modules/.bin/run-node tools/base64-encoding.js "$1"</string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>subtext</key>
-				<string></string>
-				<key>title</key>
-				<string>Encode Base64</string>
-				<key>type</key>
-				<integer>0</integer>
-				<key>withspace</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.scriptfilter</string>
-			<key>uid</key>
-			<string>3689F12F-ED0F-43BA-A3CB-551EC82D1C4F</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>alfredfiltersresults</key>
-				<false/>
-				<key>alfredfiltersresultsmatchmode</key>
-				<integer>0</integer>
-				<key>argumenttrimmode</key>
-				<integer>0</integer>
-				<key>argumenttype</key>
-				<integer>2</integer>
-				<key>escaping</key>
-				<integer>102</integer>
-				<key>keyword</key>
-				<string>ip</string>
-				<key>queuedelaycustom</key>
-				<integer>3</integer>
-				<key>queuedelayimmediatelyinitially</key>
-				<true/>
-				<key>queuedelaymode</key>
-				<integer>0</integer>
-				<key>queuemode</key>
-				<integer>1</integer>
-				<key>runningsubtext</key>
-				<string></string>
-				<key>script</key>
-				<string>./node_modules/.bin/run-node tools/ip.js "$1"</string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>subtext</key>
-				<string></string>
-				<key>title</key>
-				<string>Get IP</string>
-				<key>type</key>
-				<integer>0</integer>
-				<key>withspace</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.scriptfilter</string>
-			<key>uid</key>
-			<string>6DBFBA7B-64E8-44B2-B788-B6CD6358E0C1</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>alfredfiltersresults</key>
-				<false/>
-				<key>alfredfiltersresultsmatchmode</key>
-				<integer>0</integer>
-				<key>argumenttrimmode</key>
-				<integer>0</integer>
-				<key>argumenttype</key>
-				<integer>2</integer>
-				<key>escaping</key>
-				<integer>102</integer>
-				<key>keyword</key>
-				<string>time</string>
-				<key>queuedelaycustom</key>
-				<integer>3</integer>
-				<key>queuedelayimmediatelyinitially</key>
-				<true/>
-				<key>queuedelaymode</key>
-				<integer>0</integer>
-				<key>queuemode</key>
-				<integer>1</integer>
-				<key>runningsubtext</key>
-				<string></string>
-				<key>script</key>
-				<string>./node_modules/.bin/run-node tools/time.js "$1"</string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>subtext</key>
-				<string></string>
-				<key>title</key>
-				<string>Get current timestamp</string>
-				<key>type</key>
-				<integer>0</integer>
-				<key>withspace</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.scriptfilter</string>
-			<key>uid</key>
-			<string>68B44B80-9E37-4C6F-A2B9-7FA53E1CA2BC</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>alfredfiltersresults</key>
-				<false/>
-				<key>alfredfiltersresultsmatchmode</key>
-				<integer>0</integer>
-				<key>argumenttrimmode</key>
-				<integer>0</integer>
-				<key>argumenttype</key>
-				<integer>0</integer>
-				<key>escaping</key>
-				<integer>102</integer>
-				<key>keyword</key>
 				<string>ts</string>
 				<key>queuedelaycustom</key>
 				<integer>3</integer>
@@ -494,7 +345,7 @@
 				<key>queuedelaymode</key>
 				<integer>1</integer>
 				<key>queuemode</key>
-				<integer>1</integer>
+				<integer>2</integer>
 				<key>runningsubtext</key>
 				<string></string>
 				<key>script</key>
@@ -516,23 +367,6 @@
 			<string>alfred.workflow.input.scriptfilter</string>
 			<key>uid</key>
 			<string>015EABB1-C798-4538-9D12-860B9C0F6EE5</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>autopaste</key>
-				<false/>
-				<key>clipboardtext</key>
-				<string>{query}</string>
-				<key>transient</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.output.clipboard</string>
-			<key>uid</key>
-			<string>CCB0E0F3-5A9A-482E-8296-BAB046D60BF3</string>
 			<key>version</key>
 			<integer>2</integer>
 		</dict>
@@ -680,6 +514,100 @@
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>alfredfiltersresults</key>
+				<false/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>keyword</key>
+				<string>enbase64</string>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>2</integer>
+				<key>runningsubtext</key>
+				<string></string>
+				<key>script</key>
+				<string>./node_modules/.bin/run-node tools/base64-encoding.js "$1"</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>subtext</key>
+				<string></string>
+				<key>title</key>
+				<string>Encode Base64</string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>3689F12F-ED0F-43BA-A3CB-551EC82D1C4F</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alfredfiltersresults</key>
+				<false/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>2</integer>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>keyword</key>
+				<string>ip</string>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string></string>
+				<key>script</key>
+				<string>./node_modules/.bin/run-node tools/ip.js "$1"</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>subtext</key>
+				<string></string>
+				<key>title</key>
+				<string>Get IP</string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>6DBFBA7B-64E8-44B2-B788-B6CD6358E0C1</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>browser</key>
 				<string></string>
 				<key>spaces</key>
@@ -695,6 +623,70 @@
 			<string>BE242395-B98E-40D2-8059-21EE0D929E1C</string>
 			<key>version</key>
 			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>autopaste</key>
+				<false/>
+				<key>clipboardtext</key>
+				<string>{query}</string>
+				<key>transient</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.clipboard</string>
+			<key>uid</key>
+			<string>CCB0E0F3-5A9A-482E-8296-BAB046D60BF3</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alfredfiltersresults</key>
+				<false/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>keyword</key>
+				<string>rgbhex</string>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>2</integer>
+				<key>runningsubtext</key>
+				<string>Searching...</string>
+				<key>script</key>
+				<string>./node_modules/.bin/run-node tools/rgb-hex.js "$1"</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string>index.js</string>
+				<key>subtext</key>
+				<string></string>
+				<key>title</key>
+				<string>RGBA to Hex</string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>0D1710C9-4AB7-4C73-A9BD-E45CB8C9C780</string>
+			<key>version</key>
+			<integer>2</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -792,6 +784,53 @@
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>alfredfiltersresults</key>
+				<false/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>keyword</key>
+				<string>hexrgb</string>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string></string>
+				<key>script</key>
+				<string>./node_modules/.bin/run-node tools/hex-rgb.js "$1"</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>subtext</key>
+				<string></string>
+				<key>title</key>
+				<string>Hex to RGB[A]</string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>5F42D4F2-1826-4F59-8A2A-CE8775BDB0F0</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>action</key>
 				<integer>0</integer>
 				<key>argument</key>
@@ -820,6 +859,147 @@
 			<key>version</key>
 			<integer>2</integer>
 		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alfredfiltersresults</key>
+				<false/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>keyword</key>
+				<string>kcc</string>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>1</integer>
+				<key>queuemode</key>
+				<integer>2</integer>
+				<key>runningsubtext</key>
+				<string></string>
+				<key>script</key>
+				<string>./node_modules/.bin/run-node tools/kebab-case.js "$1"</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>subtext</key>
+				<string></string>
+				<key>title</key>
+				<string>kebab-case</string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>413B07F1-9473-4AB0-8EDA-133341B33D88</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alfredfiltersresults</key>
+				<false/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>keyword</key>
+				<string>lcc</string>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>1</integer>
+				<key>queuemode</key>
+				<integer>2</integer>
+				<key>runningsubtext</key>
+				<string></string>
+				<key>script</key>
+				<string>./node_modules/.bin/run-node tools/lower-camel-case.js "$1"</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>subtext</key>
+				<string></string>
+				<key>title</key>
+				<string>lower camel case</string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>31B83E31-F6DD-4CC6-92A1-72365E1EFE8F</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alfredfiltersresults</key>
+				<false/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>keyword</key>
+				<string>ucc</string>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>1</integer>
+				<key>queuemode</key>
+				<integer>2</integer>
+				<key>runningsubtext</key>
+				<string></string>
+				<key>script</key>
+				<string>./node_modules/.bin/run-node tools/upper-camel-case.js "$1"</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>subtext</key>
+				<string></string>
+				<key>title</key>
+				<string>upper camel case</string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>73D0CCB4-49C7-48EC-B839-F4C4D8A78A8A</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
 	</array>
 	<key>readme</key>
 	<string></string>
@@ -828,114 +1008,135 @@
 		<key>015EABB1-C798-4538-9D12-860B9C0F6EE5</key>
 		<dict>
 			<key>xpos</key>
-			<integer>230</integer>
+			<integer>20</integer>
 			<key>ypos</key>
-			<integer>10</integer>
+			<integer>210</integer>
 		</dict>
 		<key>0D1710C9-4AB7-4C73-A9BD-E45CB8C9C780</key>
 		<dict>
 			<key>xpos</key>
-			<integer>610</integer>
+			<integer>20</integer>
 			<key>ypos</key>
-			<integer>10</integer>
+			<integer>510</integer>
 		</dict>
 		<key>1BBCA30C-5FA2-4F30-9C8B-B659FF42FE19</key>
 		<dict>
 			<key>xpos</key>
-			<integer>330</integer>
+			<integer>700</integer>
 			<key>ypos</key>
-			<integer>280</integer>
+			<integer>300</integer>
 		</dict>
 		<key>1C62AC13-E85F-45C2-9B9B-2C8C807EAD32</key>
 		<dict>
 			<key>xpos</key>
-			<integer>330</integer>
+			<integer>20</integer>
 			<key>ypos</key>
-			<integer>10</integer>
+			<integer>110</integer>
+		</dict>
+		<key>31B83E31-F6DD-4CC6-92A1-72365E1EFE8F</key>
+		<dict>
+			<key>xpos</key>
+			<integer>20</integer>
+			<key>ypos</key>
+			<integer>810</integer>
 		</dict>
 		<key>3689F12F-ED0F-43BA-A3CB-551EC82D1C4F</key>
 		<dict>
 			<key>xpos</key>
-			<integer>430</integer>
+			<integer>20</integer>
 			<key>ypos</key>
-			<integer>10</integer>
+			<integer>310</integer>
+		</dict>
+		<key>413B07F1-9473-4AB0-8EDA-133341B33D88</key>
+		<dict>
+			<key>xpos</key>
+			<integer>20</integer>
+			<key>ypos</key>
+			<integer>710</integer>
 		</dict>
 		<key>439D6ED2-B708-407A-871C-A05019985DBF</key>
 		<dict>
 			<key>xpos</key>
-			<integer>150</integer>
+			<integer>520</integer>
 			<key>ypos</key>
-			<integer>500</integer>
+			<integer>520</integer>
 		</dict>
 		<key>5F42D4F2-1826-4F59-8A2A-CE8775BDB0F0</key>
 		<dict>
 			<key>xpos</key>
-			<integer>700</integer>
+			<integer>20</integer>
 			<key>ypos</key>
-			<integer>10</integer>
+			<integer>610</integer>
 		</dict>
 		<key>6325EE8B-527E-46AD-979A-150D6D18E388</key>
 		<dict>
 			<key>xpos</key>
-			<integer>240</integer>
+			<integer>610</integer>
 			<key>ypos</key>
-			<integer>280</integer>
+			<integer>300</integer>
 		</dict>
 		<key>68B44B80-9E37-4C6F-A2B9-7FA53E1CA2BC</key>
 		<dict>
 			<key>xpos</key>
-			<integer>150</integer>
+			<integer>20</integer>
 			<key>ypos</key>
 			<integer>10</integer>
 		</dict>
 		<key>6DBFBA7B-64E8-44B2-B788-B6CD6358E0C1</key>
 		<dict>
 			<key>xpos</key>
-			<integer>520</integer>
+			<integer>20</integer>
 			<key>ypos</key>
-			<integer>10</integer>
+			<integer>410</integer>
+		</dict>
+		<key>73D0CCB4-49C7-48EC-B839-F4C4D8A78A8A</key>
+		<dict>
+			<key>xpos</key>
+			<integer>20</integer>
+			<key>ypos</key>
+			<integer>910</integer>
 		</dict>
 		<key>762B01BB-9786-4059-A519-BEF2EC6505D6</key>
 		<dict>
 			<key>xpos</key>
-			<integer>460</integer>
+			<integer>830</integer>
 			<key>ypos</key>
-			<integer>560</integer>
+			<integer>580</integer>
 		</dict>
 		<key>AE658597-259F-441A-A362-5E7B403042E2</key>
 		<dict>
 			<key>xpos</key>
-			<integer>150</integer>
+			<integer>520</integer>
 			<key>ypos</key>
-			<integer>280</integer>
+			<integer>300</integer>
 		</dict>
 		<key>BE242395-B98E-40D2-8059-21EE0D929E1C</key>
 		<dict>
 			<key>xpos</key>
-			<integer>340</integer>
+			<integer>710</integer>
 			<key>ypos</key>
-			<integer>420</integer>
+			<integer>440</integer>
 		</dict>
 		<key>CCB0E0F3-5A9A-482E-8296-BAB046D60BF3</key>
 		<dict>
 			<key>xpos</key>
-			<integer>440</integer>
+			<integer>310</integer>
 			<key>ypos</key>
-			<integer>160</integer>
+			<integer>480</integer>
 		</dict>
 		<key>E8C103E0-FD88-4561-86FD-FCB5D769A261</key>
 		<dict>
 			<key>xpos</key>
-			<integer>290</integer>
+			<integer>660</integer>
 			<key>ypos</key>
-			<integer>560</integer>
+			<integer>580</integer>
 		</dict>
 		<key>FE14AC4E-9DF6-4557-890E-46CA2D457E7B</key>
 		<dict>
 			<key>xpos</key>
-			<integer>160</integer>
+			<integer>530</integer>
 			<key>ypos</key>
-			<integer>620</integer>
+			<integer>640</integer>
 		</dict>
 	</dict>
 	<key>webaddress</key>

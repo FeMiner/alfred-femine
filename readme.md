@@ -54,6 +54,27 @@ In Alfred, type `key`, <kbd>Enter</kbd>, and your query.
   ts text
 ```
 
+- kcc - 短横线命名
+
+```js
+  kcc 新年快乐
+  // happy-new-year
+```
+
+- lcc - 小驼峰式命名
+
+```js
+  lcc 新年快乐
+  // happyNewYear
+```
+
+- ucc - 大驼峰式命名
+
+```js
+  ucc 新年快乐
+  // HappyNewYear
+```
+
 - time - 时间戳
 
 - mdn - mdn 文档查询
