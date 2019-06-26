@@ -2,8 +2,8 @@
  * 获取本机ip
  */
 const os = require('os')
+const { exec } = require('child_process')
 const alfy = require('alfy')
-const cheerio = require('cheerio')
 
 ;(async () => {
   // 计算内网ip
@@ -21,14 +21,14 @@ const cheerio = require('cheerio')
   let eIp = '',
     geo = ''
   try {
-    // 爬取外网ip
-    const html = await alfy.fetch('https://www.ip.cn/', {
-      json: false
-    })
-    const $ = cheerio.load(html)
-    eIp = $('.well>p:first-child>code').text()
-    geo = $('.well>p:nth-child(2)>code').text()
-  } catch (error) {}
+    let ep = await getEIp()
+    if (ep) {
+      ep = ep.split(/\r\n/).filter(Boolean)
+      ;[eIp, geo] = [ep[0].split(':')[1].trim(), ep[1].split(':')[1].trim()]
+    }
+  } catch (error) {
+    alfy.log(error)
+  }
 
   const output = []
 
@@ -59,3 +59,14 @@ const cheerio = require('cheerio')
     }
   ])
 })()
+
+function getEIp() {
+  return new Promise((resolve, reject) => {
+    exec('curl -L tool.lu/ip', (err, stdout) => {
+      if (err) {
+        reject()
+      }
+      resolve(stdout)
+    })
+  })
+}
