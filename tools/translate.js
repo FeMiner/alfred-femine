@@ -4,10 +4,9 @@ const { isValidArr } = require('../utils/helper')
 
 const { input } = alfy
 const yd = youdao.translate(input)
-const ge = google.translate(input)
 const bd = baidu.translate(input)
 ;(async () => {
-  const { dict } = await Promise.race([yd, ge, bd])
+  const { dict } = await Promise.race([yd, bd])
   if (isValidArr(dict)) {
     alfy.output(
       dict.map(item => {
