@@ -2,15 +2,11 @@
  * 大驼峰式命名
  */
 const alfy = require('alfy')
-const { youdao, baidu, google } = require('translation.js')
+const { translate } = require('../utils/translate')
 const { isValidArr } = require('../utils/helper')
-
 const { input } = alfy
-const yd = youdao.translate(input)
-const ge = google.translate(input)
-const bd = baidu.translate(input)
 ;(async () => {
-  const { result } = await Promise.race([yd, ge, bd])
+  const { result } = await translate(input)
   if (isValidArr(result)) {
     alfy.output(
       result.map(item => {

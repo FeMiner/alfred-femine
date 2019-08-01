@@ -99,7 +99,7 @@ or (select content ->option + command + Q) or (copy content -> option + command 
 
 ## TODO
 
-vscode, curl
+vscode, curl, stackoverflow
 
 ## Contribute
 
