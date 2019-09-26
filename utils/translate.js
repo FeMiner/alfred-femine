@@ -1,5 +1,4 @@
 const alfy = require('alfy')
-// 彩云小译的token
 const getTsToken = async () => {
   let token = alfy.cache.get('cyxy_token')
   if (token) {
@@ -24,11 +23,12 @@ const getTsToken = async () => {
         }
       }
     )
-    const patternToken = /headers\[\"X-Authorization\"\]=\"token\:(cy4fgbil24jucmh8jfr5)\"/
+    const patternToken = /headers\[\"X-Authorization\"\]=\"token\:(\w+)\"/
     const token = jsData.match(patternToken)[1]
     if (token) {
+      // 缓存10分钟
       alfy.cache.set('cyxy_token', token, {
-        maxAge: 1 * 24 * 60 * 60 * 1000
+        maxAge: 10 * 60 * 1000
       })
       return token
     }
