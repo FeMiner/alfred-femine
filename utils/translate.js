@@ -1,4 +1,5 @@
 const alfy = require('alfy')
+const Base64 = require('js-base64').Base64
 const getTsToken = async () => {
   let token = alfy.cache.get('cyxy_token')
   if (token) {
@@ -45,14 +46,48 @@ const detectLang = input => {
   return 'en2zh'
 }
 
+const decode = str => {
+  console.log(str)
+  try {
+    const func = str =>
+      'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz'.indexOf(str)
+    return Base64.decode(
+      str
+        .split('')
+        .map(c => {
+          return func(c) > -1
+            ? 'NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm'[func(c)]
+            : c
+        })
+        .join('')
+    )
+  } catch (e) {}
+  return ''
+}
+
 const translate = async input => {
   const token = await getTsToken()
   const trans_type = detectLang(input)
+
+  const { jwt } = await alfy.fetch(
+    'https://api.interpreter.caiyunai.com/v1/user/jwt/generate',
+    {
+      method: 'post',
+      body: {
+        browser_id: 'd3d5a9330d3c9b8fe227a4cb8d2a6a88'
+      },
+      headers: {
+        'X-Authorization': `token:${token}`
+      }
+    }
+  )
+
   const fetchTransData = alfy.fetch(
     'https://api.interpreter.caiyunai.com/v1/translator',
     {
       method: 'post',
       body: {
+        browser_id: 'd3d5a9330d3c9b8fe227a4cb8d2a6a88',
         cached: true,
         dict: true,
         media: 'text',
@@ -63,7 +98,8 @@ const translate = async input => {
         trans_type
       },
       headers: {
-        'X-Authorization': `token:${token}`
+        'X-Authorization': `token:${token}`,
+        'T-Authorization': jwt
       }
     }
   )
@@ -85,11 +121,16 @@ const translate = async input => {
     fetchTransData,
     fetchDictData
   ])
+
   return {
     dict: dictData.dictionary.explanations || [],
-    result: [transData.target]
+    result: [decode(transData && transData.target)].filter(Boolean)
   }
 }
+
+// ;(async () => {
+//   console.log(await translate('test'))
+// })()
 
 module.exports = {
   translate
