@@ -127,9 +127,9 @@ const translate = async input => {
   }
 }
 
-;(async () => {
-  console.log(await translate('test'))
-})()
+// (async () => {
+//   console.log(await translate("test"));
+// })();
 
 module.exports = {
   translate
